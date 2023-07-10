@@ -1,0 +1,324 @@
+.inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.tit {
+    font-size: 40rem;
+    font-weight: 700;
+    margin: 100rem 0;
+}
+
+/* --------------------------- */
+
+.header {
+    position: relative;
+}
+
+.header_wrap {
+    padding: 20rem 0;
+}
+
+.header .top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .top .left {
+    display: flex;
+    gap: 30rem;
+}
+
+.header .left .search {
+    position: relative;
+    display: flex;
+    gap: 10rem;
+}
+
+.header .search input[type="text"] {
+    width: 100%;
+    color: #333;
+    font-size: 14px;
+    height: 40px;
+    line-height: 38px;
+    box-sizing: border-box;
+    margin: 0;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 0 46px 0 23px;
+}
+
+.header .search button {
+    position: absolute;
+    right: 0;
+    width: 50px;
+    height: 100%;
+    background: none;
+}
+
+.header .search button i {
+    font-size: 18rem;
+}
+
+
+.header .top .right {
+    display: flex;
+    gap: 20rem;
+    align-items: center;
+}
+
+.header .top .right .login {
+    display: flex;
+    gap: 20rem;
+}
+
+.right i {
+    margin: 0 5rem;
+}
+
+.right .login::before {
+    content: "";
+    top: 0;
+    width: 1rem;
+    height: 15rem;
+    background: #ddd;
+}
+
+/* ------------------------------ */
+
+.header .middle {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .gnb {
+    border-bottom: 1px solid #ddd;
+}
+
+.header .gnb i {
+    font-size: 35rem;
+    margin: 0 -15rem 0 -40rem;
+
+}
+
+.header .gnb>ul {
+    display: flex;
+    align-items: center;
+
+}
+
+.header .gnb>ul>li {
+    position: relative;
+    text-align: left;
+    padding: 18rem 35rem;
+    font-size: 20rem;
+    font-weight: 600;
+
+}
+
+.header .gnb>ul>li:hover {
+    color: #194ea3;
+}
+
+.header .gnb::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #fff url(../images/tm_bg.png) no-repeat bottom -20rem right 100rem;
+    z-index: 999;
+    height: 300rem;
+
+    opacity: 0;
+    transition: 0.5s;
+
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.158);
+}
+
+.header .gnb:hover::before {
+    opacity: 1;
+}
+
+.header .sub {
+    position: absolute;
+    overflow: hidden;
+
+    top: 130%;
+    left: 0;
+    width: 100%;
+    height: 280rem;
+    z-index: 1000;
+
+    text-align: center;
+
+
+    font-size: 16rem;
+    font-weight: 500;
+    line-height: 40rem;
+
+    color: #575757;
+
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.header .gnb:hover>ul>li .sub {
+    opacity: 1;
+}
+
+.header .sub>li {
+    position: relative;
+}
+
+.header .sub>li:hover {
+    font-weight: 700;
+    color: #194ea3;
+}
+
+.header .sub>li::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 70rem;
+    width: 0;
+    height: 1rem;
+    background: #194ea3;
+
+    transform: translate(-50%, 0);
+    transition: 0.5s;
+}
+
+.header .sub>li:hover::before {
+    width: 100%;
+}
+
+.header .link {
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 270px;
+    height: 70px;
+    background: rgba(35, 100, 207, 1);
+    border-radius: 35px;
+    transition: all 0.3s ease;
+}
+
+.header .link .cir-lt::before {
+    content: "\f138";
+    position: absolute;
+    font-family: bootstrap-icons;
+    top: 15rem;
+    right: 25rem;
+    font-size: 40rem;
+    color: #fff;
+    z-index: 5;
+}
+
+.header .link .cir-rt {
+    display: block;
+    position: absolute;
+    left: 192px;
+    top: 38%;
+    width: 20px;
+    height: 20px;
+    background: #000;
+    border-radius: 20px;
+
+}
+
+@keyframes width {
+    0% {
+        transform: translateX(-50%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.header .link:hover .cir-rt {
+    transition: width .3s ease .3s
+}
+
+/* 나중에ㅐ 애니메이션 하기 */
+
+.header .link .txt {
+    display: inline-block;
+    color: #fff;
+    font-size: 19rem;
+    font-weight: 700;
+    padding-left: 29rem;
+}
+
+.header .link .eng {
+    color: #fff;
+    font-size: 12rem;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    padding-left: 10rem;
+    opacity: 0.6;
+}
+
+/* ---------------------------- */
+
+.main_visual .swiper-slide {
+    height: 530rem;
+}
+
+.main_visual .main_slide .img01 {
+    background: url(../images/mainvisual_01.PNG) no-repeat center center/cover;
+}
+
+.main_visual .main_slide .img02 {
+    background: url(../images/mainvisual_02.PNG) no-repeat center center/cover;
+}
+
+/* ----------------------- */
+
+.main_content {
+    padding: 0 0 100rem 0;
+}
+
+
+.main_content .swiper-slide img {
+    width: 100%;
+    transition: 0.5s;
+}
+
+.main_content .swiper-slide img:hover {
+    transform: scale(1.1);
+}
+
+.content_slide .swiper-slide {
+    overflow: hidden;
+}
+
+.content_slide .txt_box {
+    margin: 25rem 0;
+}
+
+.content_slide .txt_box strong {
+    display: block;
+    font-size: 20rem;
+    margin: 0 0 15rem 0;
+}
+
+.content_slide .txt_box p {
+    margin: 0 0 15rem 0;
+}
+
+.content_slide .txt_box span {
+    font-size: 14rem;
+    font-weight: 500;
+    color: #818181;
+}
+
+.content_slide .down {
+    padding: 100rem 0 0 0;
+}
