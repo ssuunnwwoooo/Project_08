@@ -8,10 +8,12 @@
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/animate.min.css">
+    <link rel="stylesheet" href="./css/slick.css">
     <link rel="stylesheet" href="./css/style.css">
 
     <script src="./js/jquery-1.12.4.min.js"></script>
     <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/slick.min.js"></script>
     <script src="./js/style.js"></script>
 </head>
 
@@ -117,186 +119,348 @@
                         <div class="swiper-slide img02"></div>
                     </div>
                 </div>
+                <div class="swiper-pagination"></div>
             </section>
 
             <section class="main_content">
                 <div class="content_wrap inner">
-                    <h2 class="tit">지금 딱, 이 행사!</h2>
+                    <div class="top">
+                        <h2 class="tit">지금 딱, 이 행사!</h2>
+                        <div class="arrows">
+                            <i class="xi-angle-left-min left"></i>
+                            <i class="xi-angle-right-min right"></i>
+                        </div>
 
-                    <div class="content_slide swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide down img01">
-                                <a href="/">
-                                    <div class="txt_box">
-                                        <strong>대한민국 친환경 농특산품 및 중소기업 박람회</strong>
-                                        <p>제1전시장 2B홀</p>
-                                        <span>2023-07-07 ~ 2023-07-11</span>
-                                    </div>
+                        <div class="more"><a href="/">더 많은 행사보기 <i class="xi-arrow-right"></i></a></div>
+                    </div>
+                    <div class="circle"></div>
+                    <div class="content_slide">
+                        <div class="box box01 down">
+                            <a href="/">
+                                <div class="txt_box">
+                                    <strong>대한민국 친환경 농특산품 및 중소기업 박람회</strong>
+                                    <p>제1전시장 2B홀</p>
+                                    <span>2023-07-07 ~ 2023-07-11</span>
+                                </div>
+                                <div class="img_box Dday">
                                     <img src="./images/event_01.PNG" alt="">
-                                </a>
-                            </div>
-                            <div class="swiper-slide img02">
-                                <a href="/">
-                                    <div class="txt_box">
-                                        <strong>부산 우수제품 쇼핑샵'동백상회' 입점제품 선정 품평회</strong>
-                                        <p>제1전시장 회의실 211,2호</p>
-                                        <span>2023-07-11 ~ 2023-07-11</span>
-                                    </div>
-                                    <img src="./images/event_noimg02.jpg" alt="">
-                                </a>
-                            </div>
-                            <div class="swiper-slide down img03">
-                                <a href="/">
-                                    <div class="txt_box">
-                                        <strong>2023년 공공재정환수제도 권역별 교육</strong>
-                                        <p>제2전시장 회의실 121-124호</p>
-                                        <span>2023-07-11 ~ 2023-07-11</span>
-                                    </div>
-                                    <img src="./images/event_noimg02.jpg" alt="">
-                                </a>
-                            </div>
-                            <div class="swiper-slide img04">
-                                <a href="/">
-                                    <div class="txt_box">
-                                        <strong>2023년 부산직업교육박람회</strong>
-                                        <p>제1전시장 1홀</p>
-                                        <span>2023-07-11 ~ 2023-07-13</span>
-                                    </div>
-                                    <img src="./images/event_noimg01.jpg" alt="">
-                                </a>
-                            </div>
-                            <div class="swiper-slide down img05">
-                                <a href="/">
-                                    <div class="txt_box">
-                                        <strong>심슨대폭발 입시 설명회</strong>
-                                        <p>제1전시장 회의실 216호</p>
-                                        <span>2023-07-11 ~ 2023-07-11</span>
-                                    </div>
-                                    <img src="./images/event_noimg02.jpg" alt="">
-                                </a>
-                            </div>
-                            <div class="swiper-slide img06">
-                                <a href="/">
-                                    <div class="txt_box">
-                                        <strong>모바일 게임물 재택 모니터링단 소통간담회</strong>
-                                        <p>제1전시장 211,2호</p>
-                                        <span>2023-07-12 ~ 2023-07-12</span>
-                                    </div>
-                                    <img src="./images/event_noimg01.jpg" alt="">
-                                </a>
-                            </div>
-                            <div class="swiper-slide down img07">
-                                <a href="/">
-                                    <div class="txt_box">
-                                        <strong>부산지역 통산진흥기관 협의회 출범 업무 협약식 및 간담회</strong>
-                                        <p>제2전시장 회의실 125,6호</p>
-                                        <span>2023-07-12 ~ 2023-07-12</span>
-                                    </div>
-                                    <img src="./images/event_noimg02.jpg" alt="">
-                                </a>
-                            </div>
-                            <div class="swiper-slide img08">
-                                <a href="/">
-                                    <div class="txt_box">
-                                        <strong>2023년도 2차 건설사업본부 리더십 워크숍</strong>
-                                        <p>제2전시장 회의실 125,6호</p>
-                                        <span>2023-07-13 ~ 2023-07-14</span>
-                                    </div>
-                                    <img src="./images/event_noimg02.jpg" alt="">
-                                </a>
-                            </div>
-                            <div class="swiper-slide down img09">
-                                <a href="/">
-                                    <div class="txt_box">
-                                        <strong>고리원전 3,4호기 방사선환경영향평가서 초안 주민공청회 (부산지역)</strong>
-                                        <p>제2전시장</p>
-                                        <span>2023-07-13 ~ 2023-07-13</span>
-                                    </div>
-                                    <img src="./images/event_noimg02.jpg" alt="">
-                                </a>
-                            </div>
-                            <div class="swiper-slide img010">
-                                <a href="/">
-                                    <div class="txt_box">
-                                        <strong>2023년 제 35회 부산베이비&유아교육용품전</strong>
-                                        <p>제1전시장 3홀</p>
-                                        <span>2023-07-13 ~ 2023-07-16</span>
-                                    </div>
-                                    <img src="./images/event_noimg02.jpg" alt="">
-                                </a>
-                            </div>
-                            <div class="swiper-slide down img11">
-                                <a href="/">
-                                    <div class="txt_box">
-                                        <strong>"이병훈 x 유리스마 걸쭉쇼"</strong>
-                                        <p>제2전시장 회의실 121,2호</p>
-                                        <span>2023-07-14 ~ 2023-07-14</span>
-                                    </div>
-                                    <img src="./images/event_noimg01.jpg" alt="">
-                                </a>
-                            </div>
-                            <div class="swiper-slide img12">
-                                <a href="/">
-                                    <div class="txt_box">
-                                        <strong>2023 부산MBC웨딩박람회 in 벡스코</strong>
-                                        <p>제2전시장 4B홀</p>
-                                        <span>2023-07-14 ~ 2023-07-16</span>
-                                    </div>
-                                    <img src="./images/event_noimg02.jpg" alt="">
-                                </a>
-                            </div>
-                            <div class="swiper-slide down img13">
-                                <a href="/">
-                                    <div class="txt_box">
-                                        <strong>2023 캔들라이트:비발디의'사계'를 누리마루APEC하우스에서</strong>
-                                        <p>누리마루</p>
-                                        <span>2023-07-14 ~ 2023-07-14</span>
-                                    </div>
-                                    <img src="./images/event_02.JPG" alt="">
-                                </a>
-                            </div>
-                            <div class="swiper-slide img14">
-                                <a href="/">
-                                    <div class="txt_box">
-                                        <strong>2023 대입 상담캠프</strong>
-                                        <p>제1전시장 2홀</p>
-                                        <span>2023-07-14 ~ 2023-07-15</span>
-                                    </div>
-                                    <img src="./images/event_noimg02.jpg" alt="">
-                                </a>
-                            </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="box box02">
+                            <a href="/">
+                                <div class="txt_box">
+                                    <strong>부산 우수제품 쇼핑샵'동백상회' 입점제품 선정 품평회</strong>
+                                    <p>제1전시장 회의실 211,2호</p>
+                                    <span>2023-07-11 ~ 2023-07-11</span>
+                                </div>
+                                <div class="img_box Dday"><img src="./images/event_noimg02.jpg" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="box box03 down">
+                            <a href="/">
+                                <div class="txt_box">
+                                    <strong>2023년 공공재정환수제도 권역별 교육</strong>
+                                    <p>제2전시장 회의실 121-124호</p>
+                                    <span>2023-07-11 ~ 2023-07-11</span>
+                                </div>
+                                <div class="img_box Dday"><img src="./images/event_noimg02.jpg" alt=""></div>
+                            </a>
+                        </div>
+                        <div class="box box04">
+                            <a href="/">
+                                <div class="txt_box">
+                                    <strong>2023년 부산직업교육박람회</strong>
+                                    <p>제1전시장 1홀</p>
+                                    <span>2023-07-11 ~ 2023-07-13</span>
+                                </div>
+                                <div class="img_box Dday"><img src="./images/event_noimg01.jpg" alt=""></div>
+                            </a>
+                        </div>
+                        <div class="down box box05">
+                            <a href="/">
+                                <div class="txt_box">
+                                    <strong>심슨대폭발 입시 설명회</strong>
+                                    <p>제1전시장 회의실 216호</p>
+                                    <span>2023-07-11 ~ 2023-07-11</span>
+                                </div>
+                                <div class="img_box Dday"><img src="./images/event_noimg02.jpg" alt=""></div>
+                            </a>
+                        </div>
+                        <div class="box box06">
+                            <a href="/">
+                                <div class="txt_box">
+                                    <strong>모바일 게임물 재택 모니터링단 소통간담회</strong>
+                                    <p>제1전시장 211,2호</p>
+                                    <span>2023-07-12 ~ 2023-07-12</span>
+                                </div>
+                                <div class="img_box"><img src="./images/event_noimg01.jpg" alt=""></div>
+                            </a>
+                        </div>
+                        <div class="down box box07">
+                            <a href="/">
+                                <div class="txt_box">
+                                    <strong>부산지역 통산진흥기관 협의회 출범 업무 협약식 및 간담회</strong>
+                                    <p>제2전시장 회의실 125,6호</p>
+                                    <span>2023-07-12 ~ 2023-07-12</span>
+                                </div>
+                                <div class="img_box"><img src="./images/event_noimg02.jpg" alt=""></div>
+                            </a>
+                        </div>
+                        <div class="box box08">
+                            <a href="/">
+                                <div class="txt_box">
+                                    <strong>2023년도 2차 건설사업본부 리더십 워크숍</strong>
+                                    <p>제2전시장 회의실 125,6호</p>
+                                    <span>2023-07-13 ~ 2023-07-14</span>
+                                </div>
+                                <div class="img_box"><img src="./images/event_noimg02.jpg" alt=""></div>
+                            </a>
+                        </div>
+                        <div class="down box box09">
+                            <a href="/">
+                                <div class="txt_box">
+                                    <strong>고리원전 3,4호기 방사선환경영향평가서 초안 주민공청회 (부산지역)</strong>
+                                    <p>제2전시장</p>
+                                    <span>2023-07-13 ~ 2023-07-13</span>
+                                </div>
+                                <div class="img_box"><img src="./images/event_noimg02.jpg" alt=""></div>
+                            </a>
+                        </div>
+                        <div class="box box10">
+                            <a href="/">
+                                <div class="txt_box">
+                                    <strong>2023년 제 35회 부산베이비&유아교육용품전</strong>
+                                    <p>제1전시장 3홀</p>
+                                    <span>2023-07-13 ~ 2023-07-16</span>
+                                </div>
+                                <div class="img_box"><img src="./images/event_noimg02.jpg" alt=""></div>
+                            </a>
+                        </div>
+                        <div class="down box box11">
+                            <a href="/">
+                                <div class="txt_box">
+                                    <strong>"이병훈 x 유리스마 걸쭉쇼"</strong>
+                                    <p>제2전시장 회의실 121,2호</p>
+                                    <span>2023-07-14 ~ 2023-07-14</span>
+                                </div>
+                                <div class="img_box"><img src="./images/event_noimg01.jpg" alt=""></div>
+                            </a>
+                        </div>
+                        <div class="box box12">
+                            <a href="/">
+                                <div class="txt_box">
+                                    <strong>2023 부산MBC웨딩박람회 in 벡스코</strong>
+                                    <p>제2전시장 4B홀</p>
+                                    <span>2023-07-14 ~ 2023-07-16</span>
+                                </div>
+                                <div class="img_box"><img src="./images/event_noimg02.jpg" alt=""></div>
+                            </a>
+                        </div>
+                        <div class="down box box13">
+                            <a href="/">
+                                <div class="txt_box">
+                                    <strong>2023 캔들라이트:비발디의'사계'를 누리마루APEC하우스에서</strong>
+                                    <p>누리마루</p>
+                                    <span>2023-07-14 ~ 2023-07-14</span>
+                                </div>
+                                <div class="img_box"><img src="./images/event_02.JPG" alt=""></div>
+                            </a>
+                        </div>
+                        <div class="box box14">
+                            <a href="/">
+                                <div class="txt_box">
+                                    <strong>2023 대입 상담캠프</strong>
+                                    <p>제1전시장 2홀</p>
+                                    <span>2023-07-14 ~ 2023-07-15</span>
+                                </div>
+                                <div class="img_box"><img src="./images/event_noimg02.jpg" alt=""></div>
+                            </a>
                         </div>
                     </div>
+
                 </div>
             </section>
 
             <section class="main_notice">
                 <div class="notice_wrap inner">
-                    <h2 class="tit">Notice.</h2>
+
+                    <div class="top">
+                        <h2 class="tit">Notice.</h2>
+                        <ul class="tabs">
+                            <li class="tab-link current" data-tab="tab-1">공지</li>
+                            <li class="tab-link" data-tab="tab-2">채용</li>
+                            <li class="tab-link" data-tab="tab-3">입찰</li>
+                        </ul>
+                        <div class="more"><a href="/">더보기 <i class="xi-arrow-right"></i></a></div>
+                    </div>
+
+                    <div class="container">
+                        <div id="tab-1" class="tab-content current">
+                            <div class="notice_menu">
+                                <div class="itm">
+                                    <h3>[부산시]제 24회 부산국제관광전(BIFE2023) 홍보 (10/5~10/8), 벡스코</h3>
+                                    <span>2023-07-11</span>
+                                    <a href=""><i class="xi-arrow-right"></i></a>
+                                </div>
+                                <div class="itm">
+                                    <h3>[부산시]제 24회 부산국제관광전(BIFE2023) 홍보 (10/5~10/8), 벡스코</h3>
+                                    <span>2023-07-11</span>
+                                    <a href=""><i class="xi-arrow-right"></i></a>
+                                </div>
+                                <div class="itm">
+                                    <h3>[부산시]제 24회 부산국제관광전(BIFE2023) 홍보 (10/5~10/8), 벡스코</h3>
+                                    <span>2023-07-11</span>
+                                    <a href=""><i class="xi-arrow-right"></i></a>
+
+                                </div>
+                                <div class="itm">
+                                    <h3>[부산시]제 24회 부산국제관광전(BIFE2023) 홍보 (10/5~10/8), 벡스코</h3>
+                                    <span>2023-07-11</span>
+                                    <a href=""><i class="xi-arrow-right"></i></a>
+                                </div>
+                                <div class="itm">
+                                    <h3>[부산시]제 24회 부산국제관광전(BIFE2023) 홍보 (10/5~10/8), 벡스코</h3>
+                                    <span>2023-07-11</span>
+                                    <a href=""><i class="xi-arrow-right"></i></a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div id="tab-2" class="tab-content">
+                            <div class="notice_menu">
+                                <div class="itm">
+                                    <h3>[부산시]제 24회 부산국제관광전(BIFE2023) 홍보 (10/5~10/8), 벡스코</h3>
+                                    <span>2023-07-11</span>
+                                    <a href=""><i class="xi-arrow-right"></i></a>
+                                </div>
+                                <div class="itm">
+                                    <h3>[부산시]제 24회 부산국제관광전(BIFE2023) 홍보 (10/5~10/8), 벡스코</h3>
+                                    <span>2023-07-11</span>
+                                    <a href=""><i class="xi-arrow-right"></i></a>
+                                </div>
+                                <div class="itm">
+                                    <h3>[부산시]제 24회 부산국제관광전(BIFE2023) 홍보 (10/5~10/8), 벡스코</h3>
+                                    <span>2023-07-11</span>
+                                    <a href=""><i class="xi-arrow-right"></i></a>
+
+                                </div>
+                                <div class="itm">
+                                    <h3>[부산시]제 24회 부산국제관광전(BIFE2023) 홍보 (10/5~10/8), 벡스코</h3>
+                                    <span>2023-07-11</span>
+                                    <a href=""><i class="xi-arrow-right"></i></a>
+                                </div>
+                                <div class="itm">
+                                    <h3>[부산시]제 24회 부산국제관광전(BIFE2023) 홍보 (10/5~10/8), 벡스코</h3>
+                                    <span>2023-07-11</span>
+                                    <a href=""><i class="xi-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-3" class="tab-content">
+                            <div class="notice_menu">
+                                <div class="itm">
+                                    <h3>[부산시]제 24회 부산국제관광전(BIFE2023) 홍보 (10/5~10/8), 벡스코</h3>
+                                    <span>2023-07-11</span>
+                                    <a href=""><i class="xi-arrow-right"></i></a>
+                                </div>
+                                <div class="itm">
+                                    <h3>[부산시]제 24회 부산국제관광전(BIFE2023) 홍보 (10/5~10/8), 벡스코</h3>
+                                    <span>2023-07-11</span>
+                                    <a href=""><i class="xi-arrow-right"></i></a>
+                                </div>
+                                <div class="itm">
+                                    <h3>[부산시]제 24회 부산국제관광전(BIFE2023) 홍보 (10/5~10/8), 벡스코</h3>
+                                    <span>2023-07-11</span>
+                                    <a href=""><i class="xi-arrow-right"></i></a>
+
+                                </div>
+                                <div class="itm">
+                                    <h3>[부산시]제 24회 부산국제관광전(BIFE2023) 홍보 (10/5~10/8), 벡스코</h3>
+                                    <span>2023-07-11</span>
+                                    <a href=""><i class="xi-arrow-right"></i></a>
+                                </div>
+                                <div class="itm">
+                                    <h3>[부산시]제 24회 부산국제관광전(BIFE2023) 홍보 (10/5~10/8), 벡스코</h3>
+                                    <span>2023-07-11</span>
+                                    <a href=""><i class="xi-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
             </section>
 
             <section class="main_sns">
                 <div class="sns_wrap inner">
-                    <h2 class="tit">SNS.</h2>
+                    <div class="top">
+                        <h2 class="tit">SNS.</h2>
+                        <ul class="link">
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                        </ul>
+                    </div>
+                    <div class="bottom">
+                        <a href=""><i class="xi-instagram"></i>instagram</a>
+                        <a href=""><i class="xi-youtube-play"></i>youtube</a>
+                    </div>
+
+                    <ul class="sns_box">
+                        <li><a href=""><img src="./images/sns_01.PNG" alt=""></a></li>
+                        <li><a href=""><img src="./images/sns_02.PNG" alt=""></a></li>
+                        <li><a href=""><img src="./images/sns_03.JPG" alt=""></a></li>
+                        <li><a href=""><img src="./images/sns_04.JPG" alt=""></a></li>
+                    </ul>
                 </div>
             </section>
 
             <section class="main_letter">
-                <div class="letter wrap inner">
-                    <h2>알립니다.</h2>
+                <div class="letter_wrap inner">
+                    <div class="top">
+                        <h2 class="tit">알립니다.</h2>
+                    </div>
+
+                    <ul class="letter_box">
+                        <li><a href=""><img src="./images/m_01.PNG" alt=""></a></li>
+                        <li><a href=""><img src="./images/m_02.PNG" alt=""></a></li>
+                        <li><a href=""><img src="./images/m_03.PNG" alt=""></a></li>
+                        <li><a href=""><img src="./images/m_04.PNG" alt=""></a></li>
+                        <li><a href=""><img src="./images/m_05.PNG" alt=""></a></li>
+                        <li><a href=""><img src="./images/m_06.PNG" alt=""></a></li>
+                    </ul>
                 </div>
             </section>
 
             <section class="main_news">
                 <div class="news_wrap inner">
                     <div class="left">
-                        <h2>Newsletter.</h2>
-                        <p>매월 벡스코의 관련 소식을 빠르게 전해드립니다.</p>
+                        <div class="txt">
+                            <h3>Newsletter.</h3>
+                            <p>매월 벡스코의 관련 소식을 빠르게 전해드립니다.</p>
+                        </div>
+                        <div class="btn">
+                            <a href="">구독신청 <i class="xi-angle-right-min"></i></a>
+                        </div>
                     </div>
                     <div class="right">
-                        <h2>SNS.</h2>
-                        <p>다양한 벡스코의 소셜미디어를 안내합니다.</p>
+                        <div class="txt">
+                            <h3>SNS.</h3>
+                            <p>다양한 벡스코의 소셜미디어를 안내합니다. </p>
+                        </div>
+                        <div class="btn">
+                            <ul>
+                                <li><a href="">1</a></li>
+                                <li><a href="">2</a></li>
+                                <li><a href="">3</a></li>
+                                <li><a href="">4</a></li>
+                                <li><a href="">5</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </section>
