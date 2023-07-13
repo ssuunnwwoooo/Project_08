@@ -39,6 +39,13 @@ $(function () {
         slidesToScroll: 2,
         prevArrow: $('.left'),
         nextArrow: $('.right'),
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 2
+            }
+        }
+        ]
     });
 
     var pointSize = $(".circle").width() / 2;
