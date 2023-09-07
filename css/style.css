@@ -726,7 +726,6 @@ ul.tabs li.current {
 .main_letter .letter_box {
     display: grid;
     grid-template-columns: 2fr 2fr 2fr;
-    justify-content: space-between;
     gap: 30px;
     padding: 60rem 0;
 }
