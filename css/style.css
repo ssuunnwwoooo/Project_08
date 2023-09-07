@@ -469,7 +469,9 @@
 
 .content_slide .txt_box strong {
     display: block;
-    font-size: 20rem;
+    font-size: 18rem;
+    letter-spacing: 0.8px;
+    line-height: 23rem;
     margin: 0 0 15rem 0;
 }
 
@@ -723,40 +725,20 @@ ul.tabs li.current {
 
 .main_letter .letter_box {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 30rem;
+    grid-template-columns: 2fr 2fr 2fr;
+    justify-content: space-between;
+    gap: 30px;
     padding: 60rem 0;
-}
-
-.main_letter .letter_box img {
-    transition: 0.3s;
-}
-
-.main_letter .letter_box img:hover {
-    transform: translate(0, -10%);
 }
 
 
 .main_letter .letter_box li {
     position: relative;
+    transition: 0.3s;
 }
 
-.main_letter .letter_box li::before {
-    position: absolute;
-    content: "";
-    bottom: -10rem;
-    left: 30rem;
-    width: 50%;
-    height: 10%;
-    background: radial-gradient(circle, rgba(73, 73, 73, 0.5158438375350141) 0%, rgba(255, 255, 255, 0) 100%);
-    border-radius: 50%;
-
-    transition: 0.5s;
-    opacity: 0;
-}
-
-.main_letter .letter_box li:hover::before {
-    opacity: 1;
+.main_letter .letter_box li:hover {
+    transform: translate(0, -10%);
 }
 
 
