@@ -3,6 +3,10 @@
     font-weight: 700;
 }
 
+/* .inner {
+    border: 1px solid red;
+} */
+
 /* --------------------------- */
 
 .header {
@@ -10,7 +14,7 @@
 }
 
 .header_wrap {
-    padding: 20rem 0;
+    padding: 20rem 15rem;
 }
 
 .header .top {
@@ -82,8 +86,6 @@
 /* ------------------------------ */
 
 .header .middle {
-    max-width: 1200rem;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
 }
@@ -561,7 +563,7 @@ ul.tabs li.current {
 
 .tab-content {
     display: none;
-    padding: 15rem;
+    padding: 15rem 0;
 }
 
 .tab-content.current {
@@ -570,6 +572,7 @@ ul.tabs li.current {
 
 .notice_menu {
     display: flex;
+    justify-content: space-between;
     gap: 30rem;
 }
 
@@ -590,7 +593,7 @@ ul.tabs li.current {
 .notice_menu .itm {
     line-height: 30rem;
     word-break: break-all;
-    padding: 0 10rem 20rem 10rem;
+    padding: 0 0 20rem 0;
 }
 
 .notice_menu .itm h3 {
@@ -604,7 +607,7 @@ ul.tabs li.current {
 
 .notice_menu .itm a {
     font-size: 25rem;
-    margin: 0 0 0 50rem;
+    margin: 0 0 0 60rem;
     color: #3b3b3b;
     border: 1rem solid #ddd;
     padding: 5rem 8rem;
@@ -714,20 +717,20 @@ ul.tabs li.current {
 
 /* -------------------------------------- */
 .main_letter {
-    padding: 50rem 0;
+    padding: 80rem 0;
     border-bottom: 1rem solid #ddd;
 }
 
 .main_letter .top {
-    padding: 0 0 60rem 0;
+    padding: 0 0 30rem 0;
     border-bottom: 2rem solid #000;
 }
 
 .main_letter .letter_box {
     display: grid;
     grid-template-columns: 2fr 2fr 2fr;
-    gap: 30px;
-    padding: 60rem 0;
+    gap: 30rem;
+    padding-top: 30rem;
 }
 
 
@@ -743,12 +746,12 @@ ul.tabs li.current {
 
 /* -------------------------------------- */
 .main_news {
+    padding: 80rem 0;
     border-bottom: 1rem solid #ddd;
 }
 
 .main_news .news_wrap {
     display: flex;
-    padding: 50rem 0;
     justify-content: space-between;
 }
 
@@ -870,7 +873,8 @@ ul.tabs li.current {
 /* --------------------------------------- */
 
 .footer {
-    padding: 50rem 0;
+    padding: 30rem 0;
+    background: #f2f2f2;
 }
 
 .ft_wrap {
@@ -886,7 +890,6 @@ ul.tabs li.current {
 
 .footer .ft_wrap address {
     display: flex;
-    gap: 10rem;
 }
 
 .footer .ft_wrap .top {
@@ -894,6 +897,7 @@ ul.tabs li.current {
     gap: 30rem;
     white-space: nowrap;
     align-items: center;
+
 }
 
 .footer .ft_wrap .top li {
@@ -920,6 +924,9 @@ ul.tabs li.current {
     float: right;
 }
 
+.footer .bottom {
+    margin-top: 30px;
+}
 
 .footer .bottom li strong {
     display: block;
